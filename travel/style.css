@@ -1,0 +1,560 @@
+*{
+    margin: 0%;
+    padding: 0%;
+   
+}
+nav{
+    position: sticky;
+    top: 0;
+    
+    
+}
+#outer-container{
+    width: 100%;
+    height: 25%;
+    /* opacity: 0.8; */
+    
+}
+#inner-container{
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#inner1{
+    display: flex;
+
+}
+#inner1 > img{
+    margin-top: 4px;
+    padding:4px;
+    margin-right: 5px;
+   
+}
+#inner1>h1{
+    text-decoration: none;
+    color:red;
+}
+.heading{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-shadow: 10px 10px  rgba(237, 163, 186, 0.709) , -10px -10px  rgba(237, 163, 186, 0.709) ;
+    font-weight: 900;
+    font-style: italic;
+}
+#inner-ul{
+    list-style-type: none;
+    text-decoration: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap:50px;   
+    margin-top: 10px;  
+   
+}
+.ul-list{
+    color: azure;
+}
+.ul-list:hover{
+    color: rgba(74, 74, 244, 0.842);
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+#carouselExampleControls{
+    width: 100vw;
+    height: 100vh;
+    
+}
+#car-img1{
+    height: 100vh;
+    opacity: 0.9;
+}
+#car-img2{
+    height: 100vh;
+     opacity: 0.9;
+}
+#car-img3{
+    height: 100vh;
+     opacity: 0.8;
+}
+#car-text1{
+   position: absolute;
+   bottom: 32em;
+   left: 22rem;
+}
+#figure-text1{
+    width: 100%;
+    font-size: 3rem;
+    font-family:'Courier New', Courier, monospace ;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+#fig-text1{
+    font-weight: 700;
+    font-size: large;
+    color:rgb(19, 8, 8);
+}
+#car-text2{
+   position: absolute;
+   bottom: 30em;
+   left: 25rem;
+}
+#figure-text2{
+    width: 100%;
+    font-size: 3rem;
+    font-family:'Courier New', Courier, monospace ;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+#fig-text2{
+    font-weight: 700;
+    font-size: large;
+    color:rgb(19, 8, 8);
+}
+#car-text3{
+   position: absolute;
+   bottom: 29em;
+   left: 38rem;
+}
+#figure-text3{
+    width: 100%;
+    font-size: 3rem;
+    font-family:'Courier New', Courier, monospace ;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+#fig-text3{
+    font-weight: 700;
+    font-size: large;
+    color:rgb(19, 8, 8);
+}
+.fig-btn{
+    text-decoration: none;
+    padding: 4px;
+    margin: 4px;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    color: red;
+
+}
+.figbtn{
+     padding: 2px;
+    margin: 2px;
+    border-radius: 30px;
+    
+}
+/* section part */
+#sect-outter{
+    max-width: 1200px;
+    margin-inline: auto;
+  
+
+
+}
+#sect-heading{
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    margin: 10px;
+    font-family:'Courier New', Courier, monospace ;
+    
+}
+#sect-heading > h1{
+    font-weight: 800;
+    font-size: xx-large;
+}
+#outter-sec{
+   max-width: 1200px;
+   margin-inline: auto;
+
+}
+.cards{
+    width: 168px;
+    height: 75px;
+    border: 1px solid black;
+    border-radius:15px ;
+     background-color: rgba(128, 128, 245, 0.071);
+}
+.cards:hover{
+    background-color: rgba(128, 128, 245, 0.24);
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+
+}
+#secCard{
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    
+}
+.sect-cards{
+    width: 100vw;
+    /* width: 168px;
+    height: 75px;
+    border: 1px solid black;
+    border-radius:15px ; */
+    /* background-color: rgba(128, 128, 245, 0.071); */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#secCard1{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+#card1-h{
+    font-size: medium;
+    padding-left: 5px;
+    padding-top: 5px;
+     color: black;
+}
+#card1-p{
+    font-size: small;
+    padding-left: 5px;
+    /* padding-top: 5px; */
+     color: black;
+}
+#secImg1{
+    width: 168px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: relative;
+    bottom: 24px;
+    right: 0.7px;
+    opacity: 0.8;
+}
+/* 2 */
+#secCard2{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+#card2-h{
+    font-size: medium;
+    padding-left: 5px;
+    padding-top: 5px;
+     color: black;
+}
+#card2-p{
+    font-size: small;
+    padding-left: 5px;
+     color: black;
+    /* padding-top: 5px; */
+}
+#secImg2{
+    width: 168px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: relative;
+    bottom: 24px;
+    right: 0.7px;
+    opacity: 0.8;
+}
+/* 3 */
+#secCard3{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+#card3-h{
+    font-size: medium;
+    padding-left: 5px;
+    padding-top: 5px;
+     color: black;
+}
+#card3-p{
+    font-size: small;
+    padding-left: 5px;
+    /* padding-top: 5px; */
+     color: black;
+}
+#secImg3{
+    width: 168px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: relative;
+    bottom: 24px;
+    right: 0.7px;
+    opacity: 0.8;
+}
+/* 4 */
+#secCard4{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+#card4-h{
+    font-size: medium;
+    padding-left: 5px;
+    padding-top: 5px;
+     color: black;
+}
+#card4-p{
+    font-size: small;
+    padding-left: 5px;
+    /* padding-top: 5px; */
+     color: black;
+}
+#secImg4{
+    width: 168px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: relative;
+    bottom: 24px;
+    right: 0.7px;
+    opacity: 0.8;
+}
+/* 5 */
+#secCard5{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+#card5-h{
+    font-size: medium;
+    padding-left: 5px;
+    padding-top: 5px;
+    color: black;
+}
+#card5-p{
+    font-size: small;
+    padding-left: 5px;
+    /* padding-top: 5px; */
+    color: black;
+}
+#secImg5{
+    width: 168px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: relative;
+    bottom: 24px;
+    right: 0.7px;
+    opacity: 0.8;
+}
+.a{
+    text-decoration: none;
+
+}
+#cardbtn{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    margin: 2px;
+    
+}
+#cardbtn > button{
+    padding: 3px;
+    margin: 3px;
+    border-radius: 30px ;
+    background-color: rgba(128, 128, 245, 0.071);
+}
+#cardbtn > button:hover{
+     background-color: rgba(128, 128, 245, 0.24);
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+
+}
+#cardbtn-img{
+    width: 20px;
+}
+/* section2 */
+.section2{
+    max-width:1200px ;
+    margin-inline: auto;
+}
+.sec2-outter{
+    width: 100vw;
+    height: 100vh;
+    margin-top:100px ;
+    margin-left: 10px;
+    /* margin-left: 100px; */
+    padding-top: 2px;
+}
+.sec2-inner{
+  
+    width:1000px ;
+    height: 462px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.sec2-inner > img{
+    width: 1000px;
+    height: auto;
+    /* height: 462px; */
+    object-fit: cover;
+}
+
+.sec2-outter2{
+    width: 760px;
+    height: 330px;
+    background-color: #dabb99;
+    position: absolute;
+    top: 84em;
+    /* bottom: 25em; */
+    left: 50em;
+}
+#sec2-h{
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+#sec2-p{
+    margin-bottom: 50px;
+    padding:  10px;
+    padding: 5px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+#sec2-btn{
+    width: 500px;
+    height: auto;
+    padding: 4px;
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+
+}
+#sec2-btn > button{
+    padding: 3px;
+    margin: 3px;
+    border-radius: 10px;
+    display: flex;
+    
+}
+/* section3 */
+#second-card{
+    /* width: 100vw; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: end;
+    position: relative;
+    right: 10px;
+    top: 40px;
+
+}
+.sec3-outter{
+    /* width: 100vw;
+    height: 100%;
+    margin-top:100px ;
+    margin-left: 100px;
+    padding-top: 2px; */
+    
+}
+.sec3-inner{
+    width:1000px ;
+    height: 462px;
+    overflow: hidden;
+    margin-right: 10px;
+    /* border: 1px solid black; */
+}
+.sec3-inner > img{
+    width: 1000px;
+    height: auto;
+    /* height: 462px; */
+    object-fit: cover;
+}
+.sec3-outter2{
+      width: 760px;
+    height: 330px;
+    background-color: #dabb99;
+    position: absolute;
+    right: 50em;
+    bottom: 4em;
+    
+}
+#sec3-h{
+     margin-bottom: 20px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+#sec3-p{
+    margin-bottom: 50px;
+    padding:  10px;
+    padding: 5px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+#sec3-btn{
+    width: 500px;
+    height: auto;
+    padding: 4px;
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+
+}
+#sec3-btn > button{
+    padding: 3px;
+    margin: 3px;
+    border-radius: 10px;
+    display: flex;
+    
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: 5%;
+}
+#foot-btn{
+    margin: 2px;
+    padding: 3px;
+    border-radius: 15px;
+}
+#foot-btn2{
+    margin: 2px;
+    padding: 3px;
+    border-radius: 15px;
+}
+#foot-btn3{
+    margin: 3px;
+    padding: 3px;
+    border-radius: 15px;
+}
+#footinner-container{
+    display: flex;
+    justify-content: center;
+}
+.heading2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-shadow: 10px 10px  rgba(237, 163, 186, 0.509) , -10px -10px  rgba(237, 163, 186, 0.509) ;
+    font-weight: 900;
+    font-style: italic;
+}

@@ -1,0 +1,57 @@
+*{
+    margin: 0%;
+    padding: 0%;
+  
+}
+.head{
+    margin-top: 3px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+#head-img{
+    padding-top: 5px;
+}
+#head-text{
+    padding-top: 8px ;
+}
+article{
+    display: flex;
+    justify-content: space-around ;
+    padding-bottom:10px ;
+    
+}
+#art-map{
+    background-image: url("/assests/Screenshot\ 2025-07-02\ at\ 2.20.22\ AM.png");
+    opacity: 0.9;
+}
+#art-inner{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#art-img{
+    
+    padding-top: 10px;
+    margin-top: 8px;
+}
+#art-txt{
+    font-size: x-large;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-weight: 900;
+}
+#yt{
+    margin: 5px;
+    padding: auto;
+}
+.sec-inner{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
+footer{
+    font-size: large;
+    font-weight: 900;
+    color: red;
+}

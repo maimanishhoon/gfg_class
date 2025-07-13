@@ -1,0 +1,11 @@
+.container-fluid{
+    display: flex;
+    justify-content: space-around;
+}
+#carouselExampleIndicators{
+    display: flex;
+    justify-content: center;
+}
+#img{
+    height: 10px;
+}
