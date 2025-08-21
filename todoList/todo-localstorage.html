@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-localstorage </title>
+    <style>
+        .parent{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-color: beige;
+        }
+        .child{
+            width:800px;
+            height: 800px;
+            background-color: rgb(245, 224, 224);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .child > h1{
+            position: fixed;
+            top: 5px;
+            font-size: xx-large;
+            font-weight: 900;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #inner1{
+            position: fixed;
+            top: 70px;
+            /* display: flex;
+
+            flex-direction: column;
+            justify-content: center; */
+            
+        }
+        #input{
+            width: 700px;
+            /* margin-left: 10px; */
+        }
+        .list{
+             width: 750px;
+             height: auto;
+             /* background-color: blue;
+             color: blueviolet; */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <h1>TO-DO w/ Local storage</h1>
+            <div id="inner1">
+                <input type="text" id="input">
+                <button id="btn"> Submit</button>
+                <ul id="inner2"></ul>
+            </div>
+           
+        </div>
+    </div>
+    <script>
+        let bhar = document.querySelector(".child")
+        let btn = document.querySelector("#btn").addEventListener("click", (e)=>{
+            let userInput = document.querySelector("#input");
+            let user = userInput.value;
+
+            let container = document.querySelector("inner2");
+            
+            let list = document.createElement("li");
+            list.classList.add("list")
+            list.innerText = user;
+            bhar.appendChild(list)
+        
+        })
+    </script>
+</body>
+</html>

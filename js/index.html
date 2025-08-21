@@ -5,9 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <script src="index.js" defer></script> -->
-    <script src="conditional.js" defer></script>
+    <!-- <script src="conditional.js" defer></script> -->
+    <!-- <script src="loops.js" defer></script> -->
+    <!-- <script src="shallow-deepCopy.js" defer></script> -->
+    <!-- <script src="Closure.js" defer></script> -->
+    <!-- <script src="callback.js" defer></script> -->
+    <!-- <script src="callback-hell.js" defer></script> -->
+    <!-- <script src="HOF.js" defer></script> -->
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: antiquewhite;
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
 </head>
-<body>
-    
+<body >
+    <script>
+        let container = document.querySelector('.container');
+        container.addEventListener("click ", () =>{
+            let circle = document.createElement("div");
+            circle.classList.add("circle");
+            container.appendChild(circle)
+        })
+        
+    </script>
+    <div class="container"></div>
 </body>
 </html>

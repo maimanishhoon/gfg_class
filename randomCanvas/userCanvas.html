@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Canvas</title>
+    <style>
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: inline-block;
+            /* position:absolute; */
+        }
+        .square{
+            width: 100px;
+            height: 100px;
+              display: inline-block;
+            /* position: absolute; */
+        }
+        .rectangle{
+            width: 200px;
+            height: 100px;
+              display: inline-block;
+              gap: 5px;
+            /* position: absolute; */
+        }
+        #playground{
+            width: 800px;
+            height: 700px;
+            border: 2px solid black ;
+        }
+    </style>
+</head>
+<body>
+
+        <input type="text" name="shape" id="shape" placeholder="Enter the shape :">
+        <br>
+        <input type="color" name="color" id="color" placeholder="Enter the Color :">
+        <br>
+        <input type="number" name="quantity" id="quantity" placeholder="How Much You Want :" >
+        <br>
+        <button id="button"  >
+            Create the Circle
+        </button>
+        <div id="playground"></div>
+ 
+    <script>
+        let playground = document.querySelector("#playground");
+        let btn = document.querySelector("#button").addEventListener("click",(e)=>{
+            console.log("btn click");
+            let userInput = document.querySelector("#shape");
+            let shape = userInput.value;
+            let colorInput = document.querySelector("#color");
+            let color = colorInput.value;
+
+            let quantityInput = document.querySelector("#quantity");
+            let quantity = quantityInput.value;
+
+            for(let i = 0; i < quantity; i++){
+                console.log(i);
+                let figure1= document.createElement("div");
+                figure1.classList.add(shape);
+                figure1.style.backgroundColor = color;
+                playground.appendChild(figure1);
+            }
+        })
+    </script>
+</body>
+</html>
